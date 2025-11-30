@@ -147,6 +147,7 @@
     z-index: 5;
     user-select: none;
     pointer-events: none;
+    text-shadow: 0 0 5px var(--color-brownish-gold), 0 0 15px var(--color-brownish-gold);
   }
 
   /* --- Music Control Button & Player --- */
@@ -171,7 +172,7 @@
   /* NEU: Media Query zur Anpassung auf kleinen Bildschirmen (z.B. Handys) */
   @media (max-width: 600px) {
     #music-toggle {
-      top: **40px**; /* Setzt das Icon auf kleinen Geräten weiter nach unten */
+      top: 40px; /* Setzt das Icon auf kleinen Geräten weiter nach unten */
     }
   }
 
@@ -297,7 +298,7 @@ function toggleMusic() {
   function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
-    snowflake.textContent = '❄'';
+    snowflake.textContent = '❄';
     snowflake.style.left = Math.random() * window.innerWidth + 'px';
     snowflake.style.fontSize = (Math.random() * 24 + 10) + 'px';
     snowflake.style.opacity = Math.random();
