@@ -152,7 +152,7 @@
   /* --- Music Control Button & Player --- */
   #music-toggle {
     position: fixed;
-    top: 10px;
+    top: 10px; /* Standard: Oben für größere Bildschirme */
     right: 10px;
     padding: 8px;
     background-color: var(--color-dark-red);
@@ -166,6 +166,13 @@
     height: 40px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     font-family: Arial, sans-serif; /* Emojis bleiben mittig */
+  }
+
+  /* NEU: Media Query zur Anpassung auf kleinen Bildschirmen (z.B. Handys) */
+  @media (max-width: 600px) {
+    #music-toggle {
+      top: **40px**; /* Setzt das Icon auf kleinen Geräten weiter nach unten */
+    }
   }
 
   #youtube-embed {
