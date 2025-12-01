@@ -194,7 +194,7 @@
 <div id="popup">
   <h2 id="popup-title"></h2>
   <div id="popup-content"></div>
-  <button onclick="closePopup()">Schließen</button>
+  <button onclick="closePopup()">Close</button>
 </div>
 
 <script>
@@ -262,7 +262,7 @@ function toggleMusic() {
 
     day.addEventListener('click', () => {
       if(isLocked) {
-        alert("Dieses Türchen ist noch gesperrt!"); 
+        alert("Hey you nosy bear... this door is still locked! 🔒"); 
       } else {
         popupTitle.textContent = `December ${i}`;
         popupContent.innerHTML = surprises[i]; 
